@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #001F3F;
+    color: #B0CCF0;
+
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-style: ridge;
+    border-color: #004080;
+    background-color: #003366;
+    margin-bottom: 20;
+}
+
+.section-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: #004080;
+    padding: 5px;
+    text-align: center;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+    display: table;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #B0CCF0;
+    margin: 5px;
+}
+
+.contact-link:hover {
+    color: #004080;
+}
+
+.important-info {
+    font-style: italic;
+    color: #deecff;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.contact {
+    display: table;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.what-am-i-learning {
+    display: table;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+}
+
+.skill-link {
+    text-decoration: none;
+    color: #B0CCF0;
+    margin: 5px;
+}
