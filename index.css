@@ -1,83 +1,101 @@
-body:after {
-    background-attachment: scroll;
-    background-image: linear-gradient(35deg, #F5E8C7 0%, #363062 48%, #435585 100%);
-    background-position: 0% 0%;
-    background-repeat: repeat;
-    background-size: auto;
-
-}
-
 body {
     font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(65deg, #F5E8C7 0%, #363062 48%, #435585 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    background-color: rgba(0, 0, 0, 0.8); /* Tăng độ trong suốt */
+    border-radius: 15px; /* Tăng độ bo tròn */
+    padding: 25px;
+    width: 80%;
+    max-width: 600px;
 }
 
 #avatar {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    border-style: ridge;
-    border-color: #004080;
-    background-color: #003366;
-    margin-bottom: 20;
+    border-style: solid; /* Sử dụng solid thay vì ridge */
+    border-width: 5px; /* Độ rộng của đường viền */
+    border-color: #003366;
+    background-color: #004080;
+    margin-bottom: 15px; /* Giảm khoảng cách giữa ảnh đại diện và nội dung */
 }
 
 .section-title {
     margin-top: 15px;
     margin-bottom: 10px;
-    color: #FFFFFF;
+    color: #B0CCF0; /* Đổi màu sắc tiêu đề */
     border-style: solid;
     border-color: #004080;
-    padding: 5px;
+    border-width: 2px;
+    padding: 8px;
     text-align: center;
 }
 
 .info-list {
     list-style-type: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    color: #B0CCF0;
 }
 
 .info-list li {
-    margin-bottom: 10px;
-    display: table;
+    margin-bottom: 15px;
 }
 
 .contact-link {
     text-decoration: none;
     color: #B0CCF0;
-    margin: 5px;
+    margin: 10px;
+}
+
+.contact-link img {
+    filter: invert(64%) sepia(77%) saturate(590%) hue-rotate(201deg) brightness(90%) contrast(89%); /* Chỉnh màu sắc của biểu tượng */
+    transition: filter 0.3s ease; /* Thêm hiệu ứng mượt khi chuyển đổi màu */
 }
 
 .contact-link:hover {
     color: #004080;
 }
 
-.important-info {
-    font-style: italic;
-    color: #deecff;
+.contact-link:hover img {
+    filter: invert(42%) sepia(47%) saturate(379%) hue-rotate(190deg) brightness(92%) contrast(86%); /* Màu sắc khi hover */
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 30px; /* Tăng kích thước của biểu tượng */
+    height: 30px;
 }
 
 .contact {
-    display: table;
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
+    display: flex; /* Sắp xếp liên kết liên hệ theo chiều ngang */
+    justify-content: center;
+    padding: 10px;
 }
 
 .what-am-i-learning {
-    display: table;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 .skill-link {
     text-decoration: none;
     color: #B0CCF0;
-    margin: 5px;
+    margin: 10px;
 }
+
+.skill-link:hover {
+    color: #004080;
+}
+
+footer {
+    text-align: center; /* Căn giữa nội dung trong footer */
