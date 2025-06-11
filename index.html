@@ -1,109 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My information</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>profile</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="card mt-5">
-                    <div class="card-body">
-                        <img src="img/avt.jpg" id="avatar" class="mx-auto d-block mb-3">
-                        <div class="sl-l-container__header px-3">
-                            <div class="sl-c-txt__header"><b>Hi there! I'm Can</b></div>
-                            <div class="sl-c-txt__body mt-2"><b><span>Huu Can Nguyen |</span> <span>Nguyễn Hữu
-                                        Cần</span></b></div>
-                            <ul class="list-group info-list">
-                                <li class="list-group-item">Date of birth: <span
-                                        class="important-info">12/07/2009</span>
-                                </li>
-                                <li class="list-group-item">Sex: <span class="important-info">Male</span></li>
-                                <li class="list-group-item">Nationality: <span class="important-info">Vietnam</span>
-                                </li>
-                            </ul>
-                            <hr>
-                        </div>
+<body id="top">
 
-                        <div class="mt-4 row p-4">
-                            <h3 class="section-title">Get to know me</h3>
-                            <div class="col-7 sl-c-txt__body p-3 gettokhowme">
-                                <p>I am a student, born in 2009, and I am passionate about programming. Every time I sit
-                                    in front of a computer screen and start coding, I feel like I am exploring a new
-                                    world, full of excitement and fascination. Programming is not just a skill; to me,
-                                    it's also a way to express creativity and solve problems. Every line of code I write
-                                    is a step forward, and I always look forward to experimenting with new ideas and
-                                    creating practical applications. I believe that, with patience and effort, I can
-                                    become an excellent programmer in the future.
-                                <p>
-                            </div>
-                            <div class="col-5 sl-c-img__flex"><img
-                                    src="https://gifdb.com/images/high/adorable-white-cat-typing-on-keyboard-mcx89p34ojfj25fh.gif"
-                                    width="150" height="150"></div>
-                        </div>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll" href="#projects" title="projects">projects</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
 
 
-                        <section class="mb-5 row">
-                            <h3 class="sl-c-txt__header col-4 pe-5 section-title"><span>This is what I'm learning</span>
-                            </h3>
-                            <div class="about-c-btn__group-skill mt-2 col-8">
-                                <a class="sl-c-btn about-c-btn__skill mt-2 mb-2" target="_blank"
-                                    href="https://cplusplus.com/">
-                                    <div class="sl-c-icon"><img class="m-1" src="img/icon/CPP.svg" width="32"> </div>
-                                    <div id="name">CPP</div>
-                                </a>
-                                <a class="sl-c-btn about-c-btn__skill mt-2 mb-2" target="_blank"
-                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                                    <div class="sl-c-icon"><img class="m-1" src="img/icon/HTML.svg" width="32"> </div>
-                                    <div id="name">HTML</div>
-                                </a>
-                                <a class="sl-c-btn about-c-btn__skill mt-2 mb-2" target="_blank"
-                                    href="https://www.w3.org/Style/CSS/Overview.en.html">
-                                    <div class="sl-c-icon"><img class="m-1" src="img/icon/CSS.svg" width="32"> </div>
-                                    <div id="name">CSS</div>
-                                </a>
-                                <a class="sl-c-btn about-c-btn__skill mt-2 mb-2" target="_blank"
-                                    href="https://www.javascript.com/">
-                                    <div class="sl-c-icon"><img class="m-1" src="img/icon/JavaScript.svg" width="32">
-                                    </div>
-                                    <div id="name">JS</div>
-                                </a>
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
 
-                            </div>
+        <div class="row intro-content">
 
-                        </section>
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hi there! I'm Can</h3>
+                <h3>
+                    Huu Can Nguyen | Nguyễn Hữu Cần <br>
+                    I'm a high school student. <br>
+                    Passionate about learning. <br>
+                    Always exploring new things. <br>
+                    Love building projects. <br>
+                    Curious about how tech works.
+                </h3>
+            </div>
 
-                        <div class="mt-4">
-                            <h3 class="section-title">What I have built</h3>
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Scroll For More
+                </a>
+            </div>
+            <div class="intro-pic"></div>
 
-                            <p class="mx-3 h5 ">---> <a href="https://nghuca.github.io/projects/" class="important-info">All
-                                    Projects</a> <---</p>
+        </div> <!-- end row -->
 
-                        </div>
-                        <footer class="mt-4">
-                            <h3 class="section-title">Contact</h3>
-                            <div class="contact">
-                                <a href="https://www.facebook.com/nghuca/" class="contact-link" target="_blank"><img
-                                        src="img/facebook.png" class="icon"></a>
-                                <a href="mailto:nguyenhuucan1279@gmail.com" class="contact-link" target="_blank"><img
-                                        src="img/email.png" class="icon"></a>
-                                <a href="https://github.com/nghuca" class="contact-link" target="_blank"><img
-                                        src="img/github.png" class="icon"></a>
-                            </div>
-                        </footer>
-                    </div>
+    </section> <!-- end intro -->
 
-                </div>
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+    <div class="about-me">
+
+        
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">About Me</h2>
             </div>
         </div>
-    </div>
-</body>
 
-</html>
+        <!-- Thêm ảnh gif mèo gõ phím ở đây, ngay dưới heading "About Me" -->
+        <div style="text-align:center;">
+            <img src="https://gifdb.com/images/high/adorable-white-cat-typing-on-keyboard-mcx89p34ojfj25fh.gif" alt="Cat Typing" style="max-width:260px; border-radius:12px;">
+        </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                        Every time I sit down to code, I feel an indescribable excitement. It’s like stepping into a new
+                        world where my ideas can come to life through lines of code. Born in 2009, I’m a high school
+                        student with a burning passion for programming and technology. To me, this isn’t just a
+                        subject—it’s an exciting journey of exploration where I can challenge myself and constantly
+                        learn.
+                    </p>
+
+                    <p>
+                        Programming is my greatest passion. I love the feeling of creating, building something from
+                        scratch, and solving complex problems. Every time I complete a small project or fix a tricky
+                        bug, I feel immensely satisfied. That’s the motivation that drives me to keep experimenting with
+                        new ideas, from writing a simple game to developing an app that can help others. Each project is
+                        a unique experience, and I’m always eager for the next challenge.
+                    </p>
+
+                    <p>
+                        Besides programming, I’m deeply interested in computer science and technology fields like the
+                        Internet of Things (IoT) and embedded systems. I enjoy creating smart devices that can interact
+                        with the real world. Connecting sensors, programming them to work as intended, and seeing them
+                        operate smoothly brings me a sense of fulfillment. It’s the perfect blend of software and
+                        hardware, turning ideas in my mind into reality. I believe technology can transform lives, and I
+                        want to be part of that change.
+                    </p>
+
+                    <p>
+                        Looking to the future, I aspire to become an outstanding programmer who can create useful
+                        applications and contribute to the advancement of technology. I know that to achieve this, I
+                        need to stay persistent, keep learning, and be ready to face challenges. Every day, I strive to
+                        gain more knowledge and experience, from the smallest lessons to bigger projects. I believe that
+                        with passion and effort, I will turn my dreams into reality.
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="row about-me__buttons">
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#0" class="btn btn--stroke full-width">Hire Me</a>
+                </div>
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#0" class="btn btn--primary full-width">Download CV</a>
+                </div>
+            </div> -->
+
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">2024 - Present</p>
+                                <h3 class="item-title">Khanh Hoa Secondary and High School</h3>
+                                <h5>Students</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- projects
+    ================================================== -->
+    <section id="projects" class="s-projects ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">projects</h2>
+
+                <p class="section-desc">
+                    My featured projects.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row projects-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">:/</h4>
+                    <p>
+                        comming soon...
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end projects-list -->
+
+    </section> <!-- end s-projects -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
+        </div>
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <p class="contact-email">
+                    <a href="mailto:#0">nguyenhuucan1279@gmail.com</a>
+                </p>
+
+                <p class="section-desc">
+                    I'm happy to connect, listen and help. Let's work together and build
+                    something awesome. Let's turn your idea to an even greater product.
+                </p>
+            </div>
+        </div>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+
+            <div class="column large-7 medium-full contact-social">
+                <h4>contact</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/nghuca/" target="_blank" title="Facebook">
+                            <!-- Facebook SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                <path
+                                    d="M29 0H3C1.3 0 0 1.3 0 3v26c0 1.7 1.3 3 3 3h13V20h-4v-5h4v-3.6C16 7.7 18.4 6 21.7 6c1.5 0 2.8.1 3.2.2v4h-2.2c-1.7 0-2 .8-2 2v2.8h4l-.5 5h-3.5v12h6c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:nguyenhuucan1279@gmail.com" target="_blank" title="Email">
+                            <!-- Email SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                <path
+                                    d="M28 4H4C2.9 4 2 4.9 2 6v20c0 1.1.9 2 2 2h24c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-12 7-12-7V6l12 7 12-7v2z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nghuca" target="_blank" title="Github">
+                            <!-- Github SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                <path
+                                    d="M16 2C8.3 2 2 8.3 2 16c0 6.2 4 11.5 9.5 13.4.7.1 1-.3 1-.7v-2.5c-3.9.8-4.7-1.7-4.7-1.7-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.2 2 3.1 1.4 3.8 1.1.1-.9.5-1.4.9-1.7-3.1-.4-6.4-1.6-6.4-7 0-1.5.5-2.7 1.3-3.7-.1-.3-.6-1.7.1-3.5 0 0 1.1-.3 3.7 1.3 1-.3 2-.5 3-.5s2 .2 3 .5c2.6-1.6 3.7-1.3 3.7-1.3.7 1.8.2 3.2.1 3.5.8 1 1.3 2.2 1.3 3.7 0 5.4-3.3 6.6-6.4 7 .5.4 1 .9 1 1.9v2.8c0 .4.3.8 1 .7C26 27.5 30 22.2 30 16c0-7.7-6.3-14-14-14z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- end contact-infos -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
