@@ -1631,8 +1631,9 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 132px;
-  height: 36px;
+  width: 125px;
+  height: auto;
+  max-height: 150px;
   margin: 0;
 }
 
@@ -1830,8 +1831,9 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 128px;
-    height: 30px;
+    width: 125px;
+    height: auto;
+    max-height: 140px;
   }
 
   .header-nav-wrap {
@@ -1933,6 +1935,8 @@ input::-moz-focus-inner {
   right: 0;
   bottom: 0;
   left: 50%;
+
+
 }
 
 .intro-pic::before {
@@ -1997,6 +2001,40 @@ input::-moz-focus-inner {
   height: 1px;
   width: 72px;
   background-color: #cf1767;
+}
+
+/* --- Tối ưu intro text màu hồng và rõ nét trên mọi thiết bị --- */
+.intro-text h3 {
+    color: #cf1767 !important;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width:900px) {
+    .intro-text h3 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .intro-text {
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+    .intro-text h3 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #cf1767 !important;
+        text-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    }
+    .intro-text h1 {
+        font-size: 3.6rem;
+        color: #fff;
+        text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+    }
 }
 
 /* ------------------------------------------------------------------- 
